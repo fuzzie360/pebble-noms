@@ -1,7 +1,9 @@
 # Noms Pebble Watch Face
 by Fazli Sapuan
 
-TODO: Add description :)
+[![ScreenShot](http://www.jailbreakmatrix.com/images/youtube-play-button.png)](http://youtu.be/1eEoC9VkqDo)
+
+[Download](http://d.pr/f/DdF0)
 
 # License
 
