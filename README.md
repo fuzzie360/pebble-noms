@@ -1,5 +1,5 @@
 # Noms Pebble Watch Face
-by Fazli Sapuan
+_by Fazli Sapuan_
 
 Animation Preview:
 
@@ -9,7 +9,25 @@ New fonts:
 
 [![ScreenShot](http://i.imgur.com/uTbNOzm.png)](http://imgur.com/uTbNOzm)
 
-[Download](http://d.pr/f/oqEl)
+**[Download](http://d.pr/f/oqEl)**
+
+# Build Instructions
+
+Clone this repository in an appropriate directory (e.g. ~/Documents/ or etc. ). I strongly suggest somewhere outside the pebble-dev directory .
+
+	git clone git@github.com:Fuzzie360/pebble-noms.git
+
+Set up waf:
+
+	python ~/pebble-dev/pebble-sdk-release-001/tools/create_pebble_project.py --symlink-only ~/pebble-dev/pebble-sdk-release-001/sdk/ pebble-noms
+	cd pebble-noms
+
+Configure and build
+
+	./waf configure
+	./waf build
+
+Install pebble-noms.pbw in build directory
 
 # License
 
