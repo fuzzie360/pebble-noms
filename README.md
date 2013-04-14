@@ -18,7 +18,7 @@ Watch face "noms" the time every minute.
 
 Clone this repository in an appropriate directory (e.g. ~/Documents/ or etc. ). I strongly suggest somewhere outside the pebble-dev directory.
 
-	git clone git@github.com:Fuzzie360/pebble-noms.git
+	git clone https://github.com/Fuzzie360/pebble-noms.git
 
 Set up waf:
 
