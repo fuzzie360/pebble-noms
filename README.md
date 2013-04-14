@@ -1,19 +1,21 @@
 # Noms Pebble Watch Face
 _by Fazli Sapuan_
 
-Animation Preview:
+Watch face "noms" the time every minute.
+
+####Animation Preview:
 
 [![Animation Video](http://i.imgur.com/3HpHOF2.png)](http://youtu.be/1eEoC9VkqDo)
 
-New fonts:
+####New fonts:
 
 [![ScreenShot](http://i.imgur.com/uTbNOzm.png)](http://imgur.com/uTbNOzm)
 
-**[Download](http://d.pr/f/oqEl)**
+###[Download](http://d.pr/f/oqEl)
 
-# Build Instructions
+## Build Instructions
 
-Clone this repository in an appropriate directory (e.g. ~/Documents/ or etc. ). I strongly suggest somewhere outside the pebble-dev directory .
+Clone this repository in an appropriate directory (e.g. ~/Documents/ or etc. ). I strongly suggest somewhere outside the pebble-dev directory.
 
 	git clone git@github.com:Fuzzie360/pebble-noms.git
 
@@ -29,7 +31,7 @@ Configure and build
 
 Install pebble-noms.pbw in build directory
 
-# License
+## License
 
 Copyright (C) 2013  Fazli Sapuan
 
@@ -49,6 +51,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 You may contact the author at fazli@sapuan.org
 
-# Fonts Used
+## Fonts Used
 
 Big Noodle Titling from Sentinel Type, designed by James Arboghast
