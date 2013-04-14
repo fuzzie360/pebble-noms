@@ -90,10 +90,14 @@ void jaw_update_callback(Layer *me, GContext* ctx) {
 }
 
 void animation_started(Animation *animation, void *data) {
-	
+	(void)animation;
+	(void)data;
 }
 
 void animation_stopped(Animation *animation, void *data) {
+	(void)animation;
+	(void)data;
+	
 	text_layer_set_text(&text_time_layer, time_text);
 	
 	property_animation_init_layer_frame(&mouth_animation_end, &mouth_layer, &mouth_to_rect, &mouth_from_rect);
@@ -158,7 +162,7 @@ void handle_init(AppContextRef ctx) {
 	text_layer_init(&text_time_layer, GRect(0, 19, 110, 107));
 	text_layer_set_text_color(&text_time_layer, GColorWhite);
 	text_layer_set_background_color(&text_time_layer, GColorClear);
-	text_time_layer.text_alignment = GTextAlignmentCenter;
+	text_layer_set_text_alignment(&text_time_layer, GTextAlignmentCenter);
 	text_layer_set_font(&text_time_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_BIG_NOODLE_TITLING_55)));
 	layer_add_child(&mouth_layer, &text_time_layer.layer);
 	
