@@ -1,9 +1,15 @@
 # Noms Pebble Watch Face
 by Fazli Sapuan
 
-[![ScreenShot](http://i.imgur.com/3HpHOF2.png)](http://youtu.be/1eEoC9VkqDo)
+Animation Preview:
 
-[Download](http://d.pr/f/DdF0)
+[![Animation Video](http://i.imgur.com/3HpHOF2.png)](http://youtu.be/1eEoC9VkqDo)
+
+New fonts:
+
+[![ScreenShot](http://i.imgur.com/uTbNOzm.png)](http://imgur.com/uTbNOzm)
+
+[Download](http://d.pr/f/oqEl)
 
 # License
 
