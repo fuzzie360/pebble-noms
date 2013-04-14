@@ -11,7 +11,7 @@ Watch face "noms" the time every minute.
 
 [![ScreenShot](http://i.imgur.com/uTbNOzm.png)](http://imgur.com/uTbNOzm)
 
-###[Download](http://repo.fuzzie.sg/pebble/noms/pebble-noms-1.1.pbw)
+###[Download](https://www.dropbox.com/s/f0z72hgfd1vkfna/pebble-noms-1.1.pbw)
 ###[Mirror](http://d.pr/f/oqEl)
 
 ## Build Instructions
