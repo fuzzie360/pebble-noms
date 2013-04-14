@@ -22,8 +22,8 @@
 	   
        {
        "type": "font",
-       "defName": "FONT_ROBOTO_CONDENSED_21",
-       "file": "fonts/Roboto-Condensed.ttf"
+       "defName": "FONT_BIG_NOODLE_TITLING_55",
+       "file": "fonts/big_noodle_titling.ttf"
        }
 	  ]
 }

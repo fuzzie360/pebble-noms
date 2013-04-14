@@ -25,7 +25,7 @@
 #define MY_UUID { 0x32, 0x69, 0x5B, 0x0B, 0x47, 0x9B, 0x4D, 0x19, 0x98, 0x0C, 0xD4, 0xC4, 0x5F, 0x1D, 0x34, 0x47 }
 PBL_APP_INFO(MY_UUID,
 			 "Noms", "Fuzzie",
-			 1, 0, /* App version */
+			 1, 1, /* App version */
 			 DEFAULT_MENU_ICON,
 			 APP_INFO_WATCH_FACE);
 
@@ -151,17 +151,18 @@ void handle_init(AppContextRef ctx) {
 	jaw_from_rect = GRect(17, 142, 110, 107);
 	jaw_to_rect = GRect(17, 97, 110, 107);
 	
-	layer_init(&mouth_layer, GRect(17, 45, 110, 107));
+	layer_init(&mouth_layer, mouth_from_rect);
 	mouth_layer.update_proc = &mouth_update_callback;
 	layer_add_child(&window.layer, &mouth_layer);
 	
-	text_layer_init(&text_time_layer, GRect(48-17, 85-45, 144-7, 168-92));
+	text_layer_init(&text_time_layer, GRect(0, 19, 110, 107));
 	text_layer_set_text_color(&text_time_layer, GColorWhite);
 	text_layer_set_background_color(&text_time_layer, GColorClear);
-	text_layer_set_font(&text_time_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_CONDENSED_21)));
+	text_time_layer.text_alignment = GTextAlignmentCenter;
+	text_layer_set_font(&text_time_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_BIG_NOODLE_TITLING_55)));
 	layer_add_child(&mouth_layer, &text_time_layer.layer);
 	
-	layer_init(&jaw_layer, GRect(17, 142, 110, 107));
+	layer_init(&jaw_layer, jaw_from_rect);
 	jaw_layer.update_proc = &jaw_update_callback;
 	layer_add_child(&window.layer, &jaw_layer);
    	
