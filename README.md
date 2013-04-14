@@ -3,15 +3,16 @@ _by Fazli Sapuan_
 
 Watch face "noms" the time every minute.
 
-####Animation Preview:
+###Animation Preview:
 
 [![Animation Video](http://i.imgur.com/3HpHOF2.png)](http://youtu.be/1eEoC9VkqDo)
 
-####New fonts:
+###New fonts:
 
 [![ScreenShot](http://i.imgur.com/uTbNOzm.png)](http://imgur.com/uTbNOzm)
 
-###[Download](http://d.pr/f/oqEl)
+###[Download](http://repo.fuzzie.sg/pebble/noms/pebble-noms-1.1.pbw)
+###[Mirror](http://d.pr/f/oqEl)
 
 ## Build Instructions
 
