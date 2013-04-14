@@ -24,10 +24,10 @@
 
 #define MY_UUID { 0x32, 0x69, 0x5B, 0x0B, 0x47, 0x9B, 0x4D, 0x19, 0x98, 0x0C, 0xD4, 0xC4, 0x5F, 0x1D, 0x34, 0x47 }
 PBL_APP_INFO(MY_UUID,
-             "Noms", "Fuzzie",
-             1, 0, /* App version */
-             DEFAULT_MENU_ICON,
-             APP_INFO_WATCH_FACE);
+			 "Noms", "Fuzzie",
+			 1, 0, /* App version */
+			 DEFAULT_MENU_ICON,
+			 APP_INFO_WATCH_FACE);
 
 Window window;
 
@@ -107,7 +107,7 @@ void handle_minute_tick(AppContextRef ctx, PebbleTickEvent *t) {
 	(void)t;
 	(void)ctx;
 	
-    property_animation_init_layer_frame(&mouth_animation_beg, &mouth_layer, &mouth_from_rect, &mouth_to_rect);
+	property_animation_init_layer_frame(&mouth_animation_beg, &mouth_layer, &mouth_from_rect, &mouth_to_rect);
 	property_animation_init_layer_frame(&jaw_animation_beg, &jaw_layer, &jaw_from_rect, &jaw_to_rect);
 	
 	animation_set_handlers(&mouth_animation_beg.animation, (AnimationHandlers) {
@@ -117,20 +117,20 @@ void handle_minute_tick(AppContextRef ctx, PebbleTickEvent *t) {
 	
 	// section based on Simplicity by Pebble Team begins
 	char *time_format;
-    if (clock_is_24h_style()) {
-    	time_format = "%R";
-    } else {
-    	time_format = "%I:%M";
-    }
+	if (clock_is_24h_style()) {
+		time_format = "%R";
+	} else {
+		time_format = "%I:%M";
+	}
 	
 	string_format_time(time_text, sizeof(time_text), time_format, t->tick_time);
 	
-    if (!clock_is_24h_style() && (time_text[0] == '0')) {
-    	memmove(time_text, &time_text[1], sizeof(time_text) - 1);
-    }
+	if (!clock_is_24h_style() && (time_text[0] == '0')) {
+		memmove(time_text, &time_text[1], sizeof(time_text) - 1);
+	}
 	// section ends
 	
-    animation_schedule(&mouth_animation_beg.animation);
+	animation_schedule(&mouth_animation_beg.animation);
 	animation_schedule(&jaw_animation_beg.animation);
 }
 
@@ -155,9 +155,9 @@ void handle_init(AppContextRef ctx) {
 	mouth_layer.update_proc = &mouth_update_callback;
 	layer_add_child(&window.layer, &mouth_layer);
 	
-    text_layer_init(&text_time_layer, GRect(48-17, 85-45, 144-7, 168-92));
-    text_layer_set_text_color(&text_time_layer, GColorWhite);
-    text_layer_set_background_color(&text_time_layer, GColorClear);
+	text_layer_init(&text_time_layer, GRect(48-17, 85-45, 144-7, 168-92));
+	text_layer_set_text_color(&text_time_layer, GColorWhite);
+	text_layer_set_background_color(&text_time_layer, GColorClear);
 	text_layer_set_font(&text_time_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_CONDENSED_21)));
 	layer_add_child(&mouth_layer, &text_time_layer.layer);
 	
