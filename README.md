@@ -11,12 +11,25 @@ Watch face "noms" the time every minute.
 
 [![ScreenShot](http://i.imgur.com/uTbNOzm.png)](http://imgur.com/uTbNOzm)
 
-###[Download](https://www.dropbox.com/s/f0z72hgfd1vkfna/pebble-noms-1.1.pbw)
-###[Mirror](http://d.pr/f/oqEl)
+###Change log:
+
+1.0
+
+* Initial release
+
+1.1
+
+* Change to bigger fonts
+
+1.2
+
+* Included menu icon
+
+###[Download v1.2](https://www.dropbox.com/s/fwupw6omkvkv78p/pebble-noms-1.2.pbw)
 
 ## Build Instructions
 
-Clone this repository in an appropriate directory (e.g. ~/Documents/ or etc. ). I strongly suggest somewhere outside the pebble-dev directory.
+Clone this repository in an appropriate directory:
 
 	git clone https://github.com/Fuzzie360/pebble-noms.git
 
@@ -51,6 +64,10 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 You may contact the author at fazli@sapuan.org
+
+## Contributions
+
+* Menu icon made by [blaziken311](http://www.reddit.com/user/blaziken311)
 
 ## Fonts Used
 
