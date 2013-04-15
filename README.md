@@ -3,13 +3,7 @@ _by Fazli Sapuan_
 
 Watch face "noms" the time every minute.
 
-###Animation Preview:
-
-[![Animation Video](http://i.imgur.com/3HpHOF2.png)](http://youtu.be/1eEoC9VkqDo)
-
-###New fonts:
-
-[![ScreenShot](http://i.imgur.com/uTbNOzm.png)](http://imgur.com/uTbNOzm)
+[![ScreenShot](http://i.imgur.com/m5YaDGD.gif)](http://imgur.com/m5YaDGD)
 
 ###Change log:
 
