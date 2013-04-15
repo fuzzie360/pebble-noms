@@ -3,7 +3,7 @@ _by Fazli Sapuan_
 
 Watch face "noms" the time every minute.
 
-[![ScreenShot](http://i.imgur.com/m5YaDGD.gif)](http://imgur.com/m5YaDGD)
+[![ScreenShot](http://i.imgur.com/9ScdHUO.gif)](http://imgur.com/9ScdHUO)
 
 ###Change log:
 
