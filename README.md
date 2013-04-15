@@ -25,7 +25,7 @@ Set up waf:
 	python ~/pebble-dev/pebble-sdk-release-001/tools/create_pebble_project.py --symlink-only ~/pebble-dev/pebble-sdk-release-001/sdk/ pebble-noms
 	cd pebble-noms
 
-Configure and build
+Configure and build:
 
 	./waf configure
 	./waf build
