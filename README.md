@@ -18,10 +18,13 @@ Feel free to tip some bitcents:
 1.3
 * Added one more tooth to both sets of teeth
 * Updated menu icon with rounded edges
+
 1.2
 * Included menu icon
+
 1.1
 * Change to bigger fonts
+
 1.0
 * Initial release
 
