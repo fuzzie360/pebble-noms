@@ -3,9 +3,9 @@ _by Fazli Sapuan_
 
 Watch face "noms" the time every minute.
 
-[![ScreenShot](http://i.imgur.com/9ScdHUO.gif)](http://imgur.com/9ScdHUO)
+[![ScreenShot](http://i.imgur.com/8EktpNe.gif)](http://imgur.com/8EktpNe)
 
-###[Download v1.2](https://www.dropbox.com/s/fwupw6omkvkv78p/pebble-noms-1.2.pbw)
+###[Download v1.3](https://www.dropbox.com/s/1yogygr581z114e/pebble-noms-1.3.pbw)
 
 ###Tips:
 
@@ -15,17 +15,15 @@ Feel free to tip some bitcents:
 
 ###Change log:
 
-1.0
-
-* Initial release
-
-1.1
-
-* Change to bigger fonts
-
+1.3
+* Added one more tooth to both sets of teeth
+* Updated menu icon with rounded edges
 1.2
-
 * Included menu icon
+1.1
+* Change to bigger fonts
+1.0
+* Initial release
 
 ## Build Instructions
 
