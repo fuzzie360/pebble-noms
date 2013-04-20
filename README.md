@@ -5,6 +5,14 @@ Watch face "noms" the time every minute.
 
 [![ScreenShot](http://i.imgur.com/9ScdHUO.gif)](http://imgur.com/9ScdHUO)
 
+###[Download v1.2](https://www.dropbox.com/s/fwupw6omkvkv78p/pebble-noms-1.2.pbw)
+
+###Tips:
+
+Feel free to tip some bitcents:
+
+	15dYcxzVR6kfZJjYnw5GMFSGQG9nGhDBvd
+
 ###Change log:
 
 1.0
@@ -18,8 +26,6 @@ Watch face "noms" the time every minute.
 1.2
 
 * Included menu icon
-
-###[Download v1.2](https://www.dropbox.com/s/fwupw6omkvkv78p/pebble-noms-1.2.pbw)
 
 ## Build Instructions
 
