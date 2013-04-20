@@ -15,17 +15,17 @@ Feel free to tip some bitcents:
 
 ###Change log:
 
-1.3
+April 20 v1.3
 * Added one more tooth to both sets of teeth
 * Updated menu icon with rounded edges
 
-1.2
+April 14 1.2
 * Included menu icon
 
-1.1
+April 13 v1.1
 * Change to bigger fonts
 
-1.0
+April 13 v1.0
 * Initial release
 
 ## Build Instructions
