@@ -19,7 +19,7 @@ April 20 v1.3
 * Added one more tooth to both sets of teeth
 * Updated menu icon with rounded edges
 
-April 14 1.2
+April 14 v1.2
 * Included menu icon
 
 April 13 v1.1
