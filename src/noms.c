@@ -37,6 +37,8 @@ Layer background_layer;
 Layer mouth_layer;
 Layer jaw_layer;
 
+GFont time_font;
+
 BmpContainer face;
 BmpContainer mouth;
 BmpContainer jaw;
@@ -146,6 +148,8 @@ void handle_init(AppContextRef ctx) {
 	
 	resource_init_current_app(&APP_RESOURCES);
 	
+	time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_BIG_NOODLE_TITLING_55));
+	
 	layer_init(&background_layer, window.layer.frame);
 	background_layer.update_proc = &face_update_callback;
 	layer_add_child(&window.layer, &background_layer);
@@ -163,7 +167,7 @@ void handle_init(AppContextRef ctx) {
 	text_layer_set_text_color(&text_time_layer, GColorWhite);
 	text_layer_set_background_color(&text_time_layer, GColorClear);
 	text_layer_set_text_alignment(&text_time_layer, GTextAlignmentCenter);
-	text_layer_set_font(&text_time_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_BIG_NOODLE_TITLING_55)));
+	text_layer_set_font(&text_time_layer, time_font);
 	layer_add_child(&mouth_layer, &text_time_layer.layer);
 	
 	layer_init(&jaw_layer, jaw_from_rect);
@@ -181,6 +185,8 @@ void handle_deinit(AppContextRef ctx) {
 	bmp_deinit_container(&face);
 	bmp_deinit_container(&mouth);
 	bmp_deinit_container(&jaw);
+	
+	fonts_unload_custom_font(time_font);
 }
 
 
