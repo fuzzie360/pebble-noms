@@ -5,6 +5,8 @@ Watch face "noms" the time every minute.
 
 [![ScreenShot](http://i.imgur.com/8EktpNe.gif)](http://imgur.com/8EktpNe)
 
+NOTE: If you have downloaded and are using v1.3, this update is not necessary. It's exactly the same.
+
 ###[Download v1.4](https://www.dropbox.com/s/4rseffz5e083q5t/pebble-noms-1.4.pbw)
 
 ###Tips:
@@ -16,7 +18,7 @@ Feel free to tip some bitcents:
 ###Change log:
 
 May 10 v1.4
-* Fixed custom font not unloaded on deinit
+* Fixed custom font not unloaded on deinit (This update was a precaution and was determined to be unnecessary. See [this]( http://forums.getpebble.com/discussion/comment/35808#Comment_35808))
 
 April 20 v1.3
 * Added one more tooth to both sets of teeth
