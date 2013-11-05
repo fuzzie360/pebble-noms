@@ -1,0 +1,42 @@
+{
+  "uuid": "32695b0b-479b-4d19-980c-d4c45f1d3447",
+  "shortName": "Noms",
+  "longName": "Noms",
+  "companyName": "Fuzzie",
+  "versionCode": 1,
+  "versionLabel": "1.4.0",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "menuIcon": true,
+        "type": "png",
+        "name": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_FACE",
+        "file": "images/face.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_JAW",
+        "file": "images/jaw.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_MOUTH",
+        "file": "images/mouth.png"
+      },
+      {
+        "type": "font",
+        "name": "FONT_BIG_NOODLE_TITLING_55",
+        "file": "fonts/big_noodle_titling.ttf"
+      }
+    ]
+  }
+}
