@@ -105,7 +105,7 @@ static void window_load(Window *window) {
 	
 	time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_BIG_NOODLE_TITLING_55));
 	
-	background_layer = bitmap_layer_create(layer_get_frame(root_layer)); //layer_init(&background_layer, window.layer.frame);
+	background_layer = bitmap_layer_create(layer_get_frame(root_layer));
     bitmap_layer_set_bitmap(background_layer, face);
     layer_add_child(root_layer, bitmap_layer_get_layer(background_layer));
     
@@ -114,18 +114,18 @@ static void window_load(Window *window) {
 	jaw_from_rect = GRect(17, 142, 110, 107);
 	jaw_to_rect = GRect(17, 97, 110, 107);
 	
-	mouth_layer = bitmap_layer_create(mouth_from_rect); //layer_init(&mouth_layer, mouth_from_rect);
+	mouth_layer = bitmap_layer_create(mouth_from_rect);
 	bitmap_layer_set_bitmap(mouth_layer, mouth);
 	layer_add_child(root_layer, bitmap_layer_get_layer(mouth_layer));
 	
-    text_time_layer = text_layer_create(GRect(0, 19, 110, 107)); //text_layer_init(&text_time_layer, GRect(0, 19, 110, 107));
+    text_time_layer = text_layer_create(GRect(0, 19, 110, 107)); 107));
 	text_layer_set_text_color(text_time_layer, GColorWhite);
 	text_layer_set_background_color(text_time_layer, GColorClear);
 	text_layer_set_text_alignment(text_time_layer, GTextAlignmentCenter);
 	text_layer_set_font(text_time_layer, time_font);
 	layer_add_child(bitmap_layer_get_layer(mouth_layer), text_layer_get_layer(text_time_layer));
 	
-	jaw_layer = bitmap_layer_create(jaw_from_rect); //layer_init(&jaw_layer, jaw_from_rect);
+	jaw_layer = bitmap_layer_create(jaw_from_rect);
 	bitmap_layer_set_bitmap(jaw_layer, jaw);
 	layer_add_child(root_layer, bitmap_layer_get_layer(jaw_layer));
 }
