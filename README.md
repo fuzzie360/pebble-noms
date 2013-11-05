@@ -5,13 +5,11 @@ Watch face "noms" the time every minute.
 
 [![ScreenShot](http://i.imgur.com/8EktpNe.gif)](http://imgur.com/8EktpNe)
 
-NOTE: If you have downloaded and are using v1.3, this update is not necessary. It's exactly the same.
-
 ###[Download & Changelog](https://github.com/Fuzzie360/pebble-noms/releases)
 
 ###Tips:
 
-Feel free to tip some bitcents:
+Feel free to tip some Bitcoin:
 
 	15dYcxzVR6kfZJjYnw5GMFSGQG9nGhDBvd
 
@@ -20,18 +18,14 @@ Feel free to tip some bitcents:
 Clone this repository in an appropriate directory:
 
 	git clone https://github.com/Fuzzie360/pebble-noms.git
+    
+Build:
 
-Set up waf:
+    pebble build
 
-	python ~/pebble-dev/pebble-sdk-release-001/tools/create_pebble_project.py --symlink-only ~/pebble-dev/pebble-sdk-release-001/sdk/ pebble-noms
-	cd pebble-noms
+Install:
 
-Configure and build:
-
-	./waf configure
-	./waf build
-
-Install pebble-noms.pbw in build directory
+	pebble install --phone [phone ip here]
 
 ## License
 
