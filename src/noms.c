@@ -62,21 +62,21 @@ void destroy_property_animation(PropertyAnimation **prop_animation) {
 }
 
 void animation_started(Animation *animation, void *data) {
-	(void)animation;
-	(void)data;
+    (void)animation;
+    (void)data;
 }
 
 void animation_stopped(Animation *animation, void *data) {
-	(void)animation;
-	(void)data;
+    (void)animation;
+    (void)data;
 
     memcpy(time_text, time_text_buffer, strlen(time_text)+1);
-	text_layer_set_text(text_time_layer, time_text);
+    text_layer_set_text(text_time_layer, time_text);
 
     destroy_property_animation(&mouth_animation_end);
     destroy_property_animation(&jaw_animation_end);
 
-	mouth_animation_end = property_animation_create_layer_frame(bitmap_layer_get_layer(mouth_layer), &mouth_to_rect, &mouth_from_rect);
+    mouth_animation_end = property_animation_create_layer_frame(bitmap_layer_get_layer(mouth_layer), &mouth_to_rect, &mouth_from_rect);
     jaw_animation_end = property_animation_create_layer_frame(bitmap_layer_get_layer(jaw_layer),  &jaw_to_rect, &jaw_from_rect);
 
     animation_schedule((Animation*) mouth_animation_end);
@@ -90,41 +90,41 @@ void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) {
     mouth_animation_beg = property_animation_create_layer_frame(bitmap_layer_get_layer(mouth_layer), &mouth_from_rect, &mouth_to_rect);
     jaw_animation_beg = property_animation_create_layer_frame(bitmap_layer_get_layer(jaw_layer), &jaw_from_rect, &jaw_to_rect);
 
-	animation_set_handlers((Animation*) mouth_animation_beg, (AnimationHandlers) {
-    	.started = (AnimationStartedHandler) animation_started,
-    	.stopped = (AnimationStoppedHandler) animation_stopped
+    animation_set_handlers((Animation*) mouth_animation_beg, (AnimationHandlers) {
+        .started = (AnimationStartedHandler) animation_started,
+        .stopped = (AnimationStoppedHandler) animation_stopped
     }, 0);
 
-	// section based on Simplicity by Pebble Team begins
+    // section based on Simplicity by Pebble Team begins
     char *time_format;
 
     if (clock_is_24h_style()) {
-      time_format = "%R";
+        time_format = "%R";
     } else {
-      time_format = "%I:%M";
+        time_format = "%I:%M";
     }
 
     strftime(time_text_buffer, sizeof(time_text_buffer), time_format, tick_time);
 
     if (!clock_is_24h_style() && (time_text_buffer[0] == '0')) {
-      memmove(time_text_buffer, &time_text_buffer[1], sizeof(time_text_buffer) - 1);
+        memmove(time_text_buffer, &time_text_buffer[1], sizeof(time_text_buffer) - 1);
     }
-	// section ends
+    // section ends
 
     animation_schedule((Animation*) mouth_animation_beg);
     animation_schedule((Animation*) jaw_animation_beg);
 }
 
 static void window_load(Window *window) {
-	Layer *root_layer = window_get_root_layer(window);
+    Layer *root_layer = window_get_root_layer(window);
 
-	face = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_FACE);
+    face = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_FACE);
     mouth = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_MOUTH);
     jaw = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_JAW);
 
-	time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_BIG_NOODLE_TITLING_55));
+    time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_BIG_NOODLE_TITLING_55));
 
-	background_layer = bitmap_layer_create(layer_get_frame(root_layer));
+    background_layer = bitmap_layer_create(layer_get_frame(root_layer));
     bitmap_layer_set_bitmap(background_layer, face);
     layer_add_child(root_layer, bitmap_layer_get_layer(background_layer));
 
@@ -133,20 +133,20 @@ static void window_load(Window *window) {
     jaw_from_rect = GRect(17, 142, 110, 107);
     jaw_to_rect = GRect(17, 97, 110, 107);
 
-	mouth_layer = bitmap_layer_create(mouth_from_rect);
-	bitmap_layer_set_bitmap(mouth_layer, mouth);
-	layer_add_child(root_layer, bitmap_layer_get_layer(mouth_layer));
+    mouth_layer = bitmap_layer_create(mouth_from_rect);
+    bitmap_layer_set_bitmap(mouth_layer, mouth);
+    layer_add_child(root_layer, bitmap_layer_get_layer(mouth_layer));
 
     text_time_layer = text_layer_create(GRect(0, 19, 110, 107));
-	text_layer_set_text_color(text_time_layer, GColorWhite);
-	text_layer_set_background_color(text_time_layer, GColorClear);
-	text_layer_set_text_alignment(text_time_layer, GTextAlignmentCenter);
-	text_layer_set_font(text_time_layer, time_font);
-	layer_add_child(bitmap_layer_get_layer(mouth_layer), text_layer_get_layer(text_time_layer));
+    text_layer_set_text_color(text_time_layer, GColorWhite);
+    text_layer_set_background_color(text_time_layer, GColorClear);
+    text_layer_set_text_alignment(text_time_layer, GTextAlignmentCenter);
+    text_layer_set_font(text_time_layer, time_font);
+    layer_add_child(bitmap_layer_get_layer(mouth_layer), text_layer_get_layer(text_time_layer));
 
-	jaw_layer = bitmap_layer_create(jaw_from_rect);
-	bitmap_layer_set_bitmap(jaw_layer, jaw);
-	layer_add_child(root_layer, bitmap_layer_get_layer(jaw_layer));
+    jaw_layer = bitmap_layer_create(jaw_from_rect);
+    bitmap_layer_set_bitmap(jaw_layer, jaw);
+    layer_add_child(root_layer, bitmap_layer_get_layer(jaw_layer));
 }
 
 static void window_unload(Window *window) {
@@ -160,10 +160,10 @@ static void window_unload(Window *window) {
     bitmap_layer_destroy(mouth_layer);
     bitmap_layer_destroy(background_layer);
 
-	fonts_unload_custom_font(time_font);
+    fonts_unload_custom_font(time_font);
 
     gbitmap_destroy(jaw);
-	gbitmap_destroy(mouth);
+    gbitmap_destroy(mouth);
     gbitmap_destroy(face);
 }
 
